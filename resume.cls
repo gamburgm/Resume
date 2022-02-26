@@ -11,8 +11,9 @@
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 
+% FIXME do I want bold? what's the deal with bold and serif typefaces? and small-caps?
 \newcommand{\name}[1]{%
-  \centerline{\Huge{#1}}%
+  \centerline{\Huge{\bfseries{#1}}}
 }
 
 \newcommand{\contentsubsection}[3]{%
@@ -23,8 +24,7 @@
 % TODO adding the bold for 'available'
 
 \newcommand{\info}[4]{%
-  \noindent
-  #1 \hfill \textbar \space \hfill #2 \hfill \textbar \space \hfill #3 \hfill \textbar \space \hfill #4
+  \centerline{#1 \textbar \space #2 \textbar \space #3 \textbar \space #4}
 }
 
 % TODO want to create a command that takes varargs for elements of a subsection
