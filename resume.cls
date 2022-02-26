@@ -37,6 +37,7 @@
 % to enable bulleted lists
 \newcommand{\contentitems}[1]{%
   \begin{itemize}[leftmargin=*]
+    \itemsep -0.25em
     \contentitem{#1}
     \formatnextitem
 }
