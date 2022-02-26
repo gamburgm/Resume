@@ -17,7 +17,7 @@
 }
 
 \newcommand{\contentsubsection}[3]{%
-  \subsection[$1]{#1 \hfill #2 \hfill #3}%
+  \subsection[#1]{#1 \hfill #2 \hfill #3}%
 }
 
 % TODO clickable URLs without formatting
@@ -26,6 +26,21 @@
 \newcommand{\info}[4]{%
   \centerline{#1 \textbar \space #2 \textbar \space #3 \textbar \space #4}
 }
+
+\makeatletter
+
+% to enable bulleted lists
+\newcommand{\contentitems}[1]{%
+  \begin{itemize} \item #1 \formatnextitem
+}
+
+\newcommand{\formatnextitem}[1]{%
+  \item #1
+  \@ifnextchar\bgroup{\formatnextitem}{\end{itemize}}
+}
+
+\makeatother
+
 
 % TODO want to create a command that takes varargs for elements of a subsection
 % \newcommand{\contentitem}[1]{%
