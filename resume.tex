@@ -3,6 +3,9 @@
 \usepackage{fontspec}
 \setmainfont{Century}
 
+\newcommand{\utilized}[1]{\techskills{Utilized}{#1}}
+
+
 \begin{document}
 
 \name{Mitch Gamburg}
@@ -20,9 +23,11 @@
 
 \section{Projects}
 \contentsubsection{Foobar}{Stripe}{Dec. 2015}
-\contentitems%
-  {I exist}
-  {eee}
-  {gggg}
+\contentitems
+{Member of the Build team, working on distributed system for remote execution of developer jobs}
+{Re-architected build system to improve load-balancing, lowering system’s resource requirements by an estimated 20-30\%, and creating infrastructure for future scalability and observability needs}
+{Created simulation of build system to compare and determine most performant load-balancing algorithm for system}
+{Leveraged production data and simulation results to create new system design and held team design meeting to compare tradeoffs, receive feedback, and decide on final implementation}
+{\utilized{Golang, gRPC, Bazel, Protobuf, python}}
 
 \end{document}

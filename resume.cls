@@ -32,6 +32,10 @@
   \item[$\bullet$] #1
 }
 
+\newcommand{\techskills}[2]{%
+  \underline{#1}: #2
+}
+
 \makeatletter
 
 % to enable bulleted lists
