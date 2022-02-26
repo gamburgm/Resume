@@ -4,6 +4,10 @@
 \LoadClass{article}
 
 \RequirePackage{titlesec}
+\RequirePackage{geometry}
+
+\nofiles
+\pagestyle{empty}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 
@@ -22,3 +26,7 @@
   \noindent
   #1 \hfill \textbar \space \hfill #2 \hfill \textbar \space \hfill #3 \hfill \textbar \space \hfill #4
 }
+
+% TODO want to create a command that takes varargs for elements of a subsection
+% \newcommand{\contentitem}[1]{%
+%   \
