@@ -5,6 +5,7 @@
 
 \RequirePackage{titlesec}
 \RequirePackage{geometry}
+\RequirePackage{enumitem}
 
 \nofiles
 \pagestyle{empty}
@@ -27,15 +28,21 @@
   \centerline{#1 \textbar \space #2 \textbar \space #3 \textbar \space #4}
 }
 
+\newcommand{\contentitem}[1]{%
+  \item[$\bullet$] #1
+}
+
 \makeatletter
 
 % to enable bulleted lists
 \newcommand{\contentitems}[1]{%
-  \begin{itemize} \item #1 \formatnextitem
+  \begin{itemize}[leftmargin=*]
+    \contentitem{#1}
+    \formatnextitem
 }
 
 \newcommand{\formatnextitem}[1]{%
-  \item #1
+  \contentitem{#1}
   \@ifnextchar\bgroup{\formatnextitem}{\end{itemize}}
 }
 
