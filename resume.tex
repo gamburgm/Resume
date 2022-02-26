@@ -1,4 +1,5 @@
-\documentclass{resume}
+\documentclass[9pt]{resume}
+
 \geometry{margin=0.5in}
 \usepackage{fontspec}
 \setmainfont{Century}
@@ -16,18 +17,42 @@
 \section{Education}
 
 \section{Employment}
+\contentsubsection{Software Engineer, Intern}{Kensho}{September-November 2021}
+\contentitems
+{Upcoming developer for GraphQL-to-SQL compiler, a universal query engine enabling users to write queries in a single language to retrieve data from multiple database backends, including MySQL, PostgreSQL, and OrientDB}
 
-\section{Research}
-
-\section{Leadership Experience}
-
-\section{Projects}
-\contentsubsection{Foobar}{Stripe}{Dec. 2015}
+\contentsubsection{Software Engineer, Intern}{Stripe}{May-July 2021}
 \contentitems
 {Member of the Build team, working on distributed system for remote execution of developer jobs}
 {Re-architected build system to improve load-balancing, lowering system’s resource requirements by an estimated 20-30\%, and creating infrastructure for future scalability and observability needs}
 {Created simulation of build system to compare and determine most performant load-balancing algorithm for system}
 {Leveraged production data and simulation results to create new system design and held team design meeting to compare tradeoffs, receive feedback, and decide on final implementation}
-{\utilized{Golang, gRPC, Bazel, Protobuf, python}}
+{\utilized{Golang, gRPC, Bazel, Protobuf, Python}}
+
+\contentsubsection{Software Engineer, Intern}{Hyannis Port Research}{June-August 2020}
+\contentitems
+{Developed transpiler to automatically upgrade 1000s of integration tests to the syntax of new test harness}
+{Implemented tcpdump-style utility for users to debug critical systems by printing network traffic live from the wire}
+{Created parsers to process and display new types of network traffic, including STP and IGMP packets}
+{\utilized{C, Python, GDB, tcpdump, tcpreplay, FIX/exchange protocols}}
+
+\contentsubsection{Full-Stack Developer, Co-op}{Alignable}{May-December 2019}
+\contentitems
+{Designed Elasticsearch-based search engine for finding discussions that answer a user’s question}
+{Migrated billions of records into Redis to speed up expensive database computations, including the calculation of mutual connections between users}
+{Analyzed user profiles to recommend search filters, helping users find higher quality search results and increasing connection requests from searches by 20\%}
+{\utilized{Ruby on Rails, PostgreSQL, Elasticsearch, Redis}}
+
+\contentsubsection{QA Automation Engineer, Intern}{Digital Guardian}{June-August 2018}
+\contentitems
+{Repaired Robot Framework tests \& python test infrastructure, helping team raise test-passing raise from 50\% to 80\%}
+
+\section{Research}
+\contentsubsection{Racketscript Compiler}{}{July 2021-Present} % TODO maybe I want a macro for this
+
+
+\section{Leadership Experience}
+
+\section{Projects}
 
 \end{document}

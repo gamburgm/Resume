@@ -1,11 +1,12 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume} % need to examine docs for these commands and customize appropriately
 
-\LoadClass{article}
+\LoadClass{extarticle}
 
 \RequirePackage{titlesec}
 \RequirePackage{geometry}
 \RequirePackage{enumitem}
+\RequirePackage{extsizes}
 
 \nofiles
 \pagestyle{empty}

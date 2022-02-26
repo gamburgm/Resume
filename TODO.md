@@ -6,8 +6,8 @@ Global
 Header
 ------
 - [ ] get top margin right
-- [ ] bold my name
-- [ ] modify spacing between name and info line
+- [x] bold my name
+- [x] modify spacing between name and info line
 - [ ] need a 'join list of strings with ' | '' command (+ center)
 
 Sections
