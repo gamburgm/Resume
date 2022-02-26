@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mg_resume} % need to examine docs for these commands and customize appropriately
+\ProvidesClass{resume} % need to examine docs for these commands and customize appropriately
 
 \LoadClass{article}
 
@@ -7,4 +7,6 @@
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
 
-
+\newcommand{\contentsubsection}[3]{%
+  \subsection[$1]{#1 \hfill #2 \hfill #3}%
+}
