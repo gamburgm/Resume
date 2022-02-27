@@ -2,6 +2,8 @@ Global
 ------
 - [ ] pick a better font
 - [ ] define spacing formatting between sections
+- [ ] \raggedright formatting weird in bullets?
+- [ ] global definitions of technologies/'proper nouns' to guarantee consistent spelling?
 
 Header
 ------

@@ -11,8 +11,8 @@
 \nofiles
 \pagestyle{empty}
 
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
-% \titleformat{\subsection}{
+\titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries\raggedright}{}{0em}{}{}
 
 % FIXME do I want bold? what's the deal with bold and serif typefaces? and small-caps?
 \newcommand{\name}[1]{%
@@ -31,7 +31,7 @@
 }
 
 \newcommand{\contentitem}[1]{%
-  \item[$\bullet$] #1
+  \item[$\bullet$] \raggedright{#1}
 }
 
 \newcommand{\techskills}[2]{%
@@ -41,10 +41,9 @@
 \makeatletter
 
 % to enable bulleted lists
-\newcommand{\contentitems}[1]{%
+\newcommand{\contentitems}{%
   \begin{itemize}[leftmargin=*]
     \itemsep -0.25em
-    \contentitem{#1}
     \formatnextitem
 }
 
