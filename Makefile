@@ -2,4 +2,4 @@ pdf:
 	latexmk resume.tex
 
 clean:
-	ls resume* | grep -v "resume.\(tex\|cls\)" | xargs rm
+	ls resume* *.log | grep -v "resume.\(tex\|cls\)" | xargs rm -f

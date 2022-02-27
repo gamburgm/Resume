@@ -2,3 +2,4 @@ resume.*
 !resume.tex
 !resume.cls
 
+*.log

@@ -12,6 +12,7 @@
 \pagestyle{empty}
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+% \titleformat{\subsection}{
 
 % FIXME do I want bold? what's the deal with bold and serif typefaces? and small-caps?
 \newcommand{\name}[1]{%
