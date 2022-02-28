@@ -3,3 +3,4 @@ resume.*
 !resume.cls
 
 *.log
+*.fls
