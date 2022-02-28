@@ -44,7 +44,7 @@
 }
 
 \newcommand{\major}[2]{%
-  \textit{#1}, \textbf{#2} GPA
+  \textit{#1}, \textbf{#2 GPA}
 }
 
 \newcommand{\contentitem}[1]{%
@@ -80,8 +80,3 @@
 }
 
 \makeatother
-
-
-% TODO want to create a command that takes varargs for elements of a subsection
-% \newcommand{\contentitem}[1]{%
-%   \
