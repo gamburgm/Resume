@@ -11,6 +11,8 @@
 \nofiles
 \pagestyle{empty}
 
+% TODO separate this file into two sections: pure-formatting commands and formatting+semantic commands (e.g. \techskills)
+
 \titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
 \titleformat{\subsection}{\normalsize\bfseries\raggedright}{}{0em}{}{}
 
@@ -20,7 +22,7 @@
 }
 
 \newcommand{\contentsubsection}[3]{%
-  \subsection[#1]{#1 \hfill #2 \hfill #3}%
+  \subsection{#1 \hfill #2 \hfill #3}%
 }
 
 % TODO clickable URLs without formatting
@@ -30,13 +32,32 @@
   \centerline{#1 \textbar \space #2 \textbar \space #3 \textbar \space #4}
 }
 
+\newcommand{\school}[3]{%
+  \contentsubsection{#1, \textnormal{#2}}{}{#3}
+}
+
+% TODO undecided on whether or not this should be a bullet or not
+\newcommand{\major}[2]{%
+  \textit{#1}, \textbf{#2} GPA
+}
+
 \newcommand{\contentitem}[1]{%
   \item[$\bullet$] \raggedright{#1}
 }
 
-\newcommand{\techskills}[2]{%
-  \underline{#1}: #2
+\newcommand{\labelledline}[2]{%
+  #1: #2
 }
+
+\newcommand{\ulline}[2]{%
+  \labelledline{\underline{#1}}{#2}
+}
+
+\newcommand{\bfline}[2]{%
+  \labelledline{\textbf{#1}}{#2}
+}
+
+\newcommand{\techskills}[2]{\ulline{#1}{#2}}
 
 \makeatletter
 
