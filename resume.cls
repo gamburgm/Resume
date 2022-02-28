@@ -11,9 +11,12 @@
 \nofiles
 \pagestyle{empty}
 
-% TODO separate this file into two sections: pure-formatting commands and formatting+semantic commands (e.g. \techskills)
+\setlength{\parskip}{-0.5em}
 
-\titleformat{\section}{\Large\raggedright}{}{0em}{}[\titlerule]
+% TODO separate this file into two sections: pure-formatting commands and formatting+semantic commands (e.g. \techskills)
+% TODO can I format it such that no section can be split on a page?
+
+\titleformat{\section}{\large\raggedright}{}{0em}{}[\titlerule]
 \titleformat{\subsection}{\normalsize\bfseries\raggedright}{}{0em}{}{}
 
 % FIXME do I want bold? what's the deal with bold and serif typefaces? and small-caps?
@@ -21,8 +24,12 @@
   \centerline{\Huge{\bfseries{#1}}}
 }
 
+\newcommand{\alignablebox}[1]{\parbox{.333\textwidth}{\strut#1}}
+
 \newcommand{\contentsubsection}[3]{%
-  \subsection{#1 \hfill #2 \hfill #3}%
+  \subsection{\alignablebox{\raggedright{#1}}%
+              \alignablebox{\centering{#2}}%
+              \alignablebox{\raggedleft{#3}}}
 }
 
 % TODO clickable URLs without formatting
@@ -36,7 +43,6 @@
   \contentsubsection{#1, \textnormal{#2}}{}{#3}
 }
 
-% TODO undecided on whether or not this should be a bullet or not
 \newcommand{\major}[2]{%
   \textit{#1}, \textbf{#2} GPA
 }
