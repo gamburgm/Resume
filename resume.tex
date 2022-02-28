@@ -6,6 +6,43 @@
 
 \newcommand{\utilized}[1]{\techskills{Utilized}{#1}}
 
+% technologies used, for consistent spelling
+
+% languages
+\newcommand{\rkt}{Racket}
+\newcommand{\trkt}{Typed Racket}
+\newcommand{\py}{Python}
+\newcommand{\go}{Golang}
+\newcommand{\cc}{C}
+\newcommand{\cpp}{C++}
+\newcommand{\rb}{Ruby}
+\newcommand{\js}{Javascript}
+\newcommand{\ts}{Typescript}
+\newcommand{\elixir}{Elixir}
+\newcommand{\ocaml}{OCaml}
+\newcommand{\wasm}{WebAssembly}
+\newcommand{\xasm}{x64 Assembly}
+\newcommand{\html}{HTML}
+\newcommand{\css}{CSS}
+
+% frameworks/databases/tools
+\newcommand{\gdb}{GDB}
+\newcommand{\bazel}{Bazel}
+\newcommand{\tcpdump}{tcpdump}
+\newcommand{\tcpreplay}{tcpreplay}
+\newcommand{\rails}{Ruby on Rails}
+\newcommand{\psql}{PostgreSQL}
+\newcommand{\es}{Elasticsearch}
+\newcommand{\redis}{Redis}
+\newcommand{\node}{Node.js}
+\newcommand{\aws}{AWS}
+
+% misc
+\newcommand{\grpc}{gRPC}
+\newcommand{\protobuf}{Protobuf}
+\newcommand{\terraform}{Terraform}
+\newcommand{\gql}{GraphQL}
+
 
 \begin{document}
 
@@ -37,21 +74,21 @@
 {Re-architected build system to improve load-balancing, lowering system’s resource requirements by an estimated 20-30\%, and creating infrastructure for future scalability and observability needs}
 {Created simulation of build system to compare and determine most performant load-balancing algorithm for system}
 {Leveraged production data and simulation results to create new system design and held team design meeting to compare tradeoffs, receive feedback, and decide on final implementation}
-{\utilized{Golang, gRPC, Bazel, Protobuf, Python}}
+{\utilized{\go, \grpc, \bazel, \protobuf, \py}}
 
 \contentsubsection{Software Engineer, Intern}{Hyannis Port Research}{June-August 2020}
 \contentitems
 {Developed transpiler to automatically upgrade 1000s of integration tests to the syntax of new test harness}
 {Implemented tcpdump-style utility for users to debug critical systems by printing network traffic live from the wire}
 {Created parsers to process and display new types of network traffic, including STP and IGMP packets}
-{\utilized{C, Python, GDB, tcpdump, tcpreplay, FIX/exchange protocols}}
+{\utilized{\cc, \py, \gdb, \tcpdump, \tcpreplay, FIX/exchange protocols}}
 
 \contentsubsection{Full-Stack Developer, Co-op}{Alignable}{May-December 2019}
 \contentitems
 {Designed Elasticsearch-based search engine for finding discussions that answer a user’s question}
 {Migrated billions of records into Redis to speed up expensive database computations, including the calculation of mutual connections between users}
 {Analyzed user profiles to recommend search filters, helping users find higher quality search results and increasing connection requests from searches by 20\%}
-{\utilized{Ruby on Rails, PostgreSQL, Elasticsearch, Redis}}
+{\utilized{\rails, \psql, \es, \redis}}
 
 \contentsubsection{QA Automation Engineer, Intern}{Digital Guardian}{June-August 2018}
 \contentitems
@@ -62,7 +99,7 @@
 \contentitems
 {Developer for Racketscript, a Racket-to-Javascript compiler to enable running Racket on the web}
 {Implementing compilation to linklets, a Racket core language form, to eliminate network egress in online editor}
-{\utilized{Typed Racket, Javascript}}
+{\utilized{\trkt, \js}}
 
 \contentsubsection{miniKanren Compiler}{}{May 2021-Present}
 \contentitems
@@ -74,7 +111,7 @@
 \contentitems
 {Developed concurrent applications to investigate the impact of the dataspace concurrency model, introduced by the Syndicate DSL, on developer experience with concurrency, in contrast to CML-style channels and actors}
 {Researched and implemented approaches for improving the performance of the relational programming language miniKanren by optimizing the unification sub-procedure}
-{\utilized{Racket, Elixir, Typescript}}
+{\utilized{\rkt, \elixir, \ts}}
 
 \section{Leadership Experience}
 \contentsubsection{Technical Director}{Sandbox at Northeastern}{May 2020-August 2021}
@@ -90,13 +127,13 @@
 \contentitems
 {Developed compiler for functional programming language, including tuples, first-class functions, mutation, and garbage collection, targeting x64 assembly}
 {Re-targeted compiler to WebAssembly and developed web editor to compile and execute programs in the browser}
-{\utilized{OCaml, Javascript, HTML/CSS, WebAssembly, x64 assembly}}
+{\utilized{\ocaml, \js, \html/\css, \wasm, \xasm}}
 
 \contentsubsection{SearchNEU}{}{September 2019-August 2020}
 \contentitems
 {Led development on SearchNEU, a search engine for Northeastern classes and professors with 4000+ monthly users}
 {Spearheaded migration of primary data storage from Elasticsearch and Firebase to PostgreSQL, re-architecting data pipeline to improve data consistency and search reliability}
 {Designed backend infrastructure for adding search filters to help users explore potential classes}
-{\utilized{Typescript, Node.js, Elasticsearch, GraphQL, PostgreSQL, Terraform, AWS}}
+{\utilized{\ts, \node, \es, \gql, \psql, \terraform, \aws}}
 
 \end{document}
